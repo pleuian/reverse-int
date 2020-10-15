@@ -1,3 +1,11 @@
-module.exports = function reverse (n) {
-  
+module.exports = function reverse (int) {
+    return (
+        parseFloat (
+            int
+                .toString()
+                .split('')
+                .reverse()
+                .join('')
+        )
+    )
 }
